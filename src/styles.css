@@ -712,6 +712,13 @@ button {
   );
 }
 
+.case-carousel-slide:has(.case-carousel-video) {
+  width: min(
+    var(--image-natural-width, calc(var(--case-gallery-render-height, 760px) * var(--image-aspect, 0.5625))),
+    calc(var(--case-gallery-render-height, 760px) * var(--image-aspect, 0.5625))
+  );
+}
+
 .case-carousel-media {
   display: flex;
   align-items: center;

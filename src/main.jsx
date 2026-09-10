@@ -546,6 +546,7 @@ function ProjectPreviewCard({ item, navigate, className = "", compact = false })
         {coverImage?.type === "video" ? (
           <div className="work-card-media">
             <video
+              key={coverImage.src}
               src={coverImage.src}
               className="work-card-image"
               style={{ objectPosition: coverImage.focalPoint || "center" }}
@@ -749,6 +750,7 @@ function ProjectImageCarousel({ gallery = [], title }) {
             <div className="case-carousel-media">
               {image.type === "video" ? (
                 <video
+                  key={image.src}
                   src={image.src}
                   className="case-carousel-image case-carousel-video"
                   style={{ objectPosition: image.focalPoint || "center" }}
@@ -757,6 +759,7 @@ function ProjectImageCarousel({ gallery = [], title }) {
                   playsInline
                   preload="metadata"
                   aria-label={image.alt}
+                  onPointerDown={(event) => event.stopPropagation()}
                   onLoadedMetadata={(event) => updateMediaMeta(image.src, event.currentTarget)}
                 />
               ) : (
