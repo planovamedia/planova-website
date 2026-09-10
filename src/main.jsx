@@ -1299,7 +1299,7 @@ function App() {
   else page = <NotFound navigate={navigate} />;
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#f8f3eb] font-inter text-black antialiased">
+    <div className="planova-cinematic min-h-screen overflow-x-hidden bg-[#f8f3eb] font-inter text-black antialiased">
       <Header path={path} navigate={navigate} />
       <AnimatePresence mode="wait">
         <motion.div

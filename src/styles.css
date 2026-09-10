@@ -17,6 +17,192 @@ body {
   background: #f8f3eb;
 }
 
+.planova-cinematic {
+  --theme-ink: #120f0b;
+  --theme-cream: #f2eee6;
+  --theme-cream-deep: #e8dfd2;
+  --theme-gold: #caa36d;
+  --theme-gold-bright: #f1d2a2;
+  --theme-muted: #8d8174;
+  background:
+    radial-gradient(circle at 72% 4%, rgba(202, 163, 109, 0.16), transparent 32rem),
+    linear-gradient(180deg, #080706 0%, var(--theme-cream) 26%, var(--theme-cream) 100%) !important;
+  color: var(--theme-ink);
+}
+
+.planova-cinematic header.fixed {
+  border-color: rgba(242, 238, 230, 0.14) !important;
+  background: rgba(10, 8, 6, 0.82) !important;
+  color: #f8f4ec !important;
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.18);
+}
+
+.planova-cinematic header.fixed img {
+  filter: brightness(0) invert(1);
+}
+
+.planova-cinematic header.fixed nav,
+.planova-cinematic header.fixed a {
+  color: rgba(248, 244, 236, 0.82) !important;
+}
+
+.planova-cinematic header.fixed a:hover,
+.planova-cinematic header.fixed a:focus-visible {
+  color: var(--theme-gold-bright) !important;
+}
+
+.planova-cinematic [class*="text-[#5E0ED7]"],
+.planova-cinematic [class*="text-[#b891ff]"],
+.planova-cinematic [class*="text-[#7f54b8]"] {
+  color: var(--theme-gold) !important;
+}
+
+.planova-cinematic [class*="bg-[#5E0ED7]"] {
+  background-color: var(--theme-gold) !important;
+  color: var(--theme-ink) !important;
+}
+
+.planova-cinematic [class*="border-[#5E0ED7]"],
+.planova-cinematic [class*="focus-visible:outline-[#5E0ED7]"] {
+  border-color: rgba(202, 163, 109, 0.88) !important;
+  outline-color: var(--theme-gold) !important;
+}
+
+.planova-cinematic .hero-orbit-ring {
+  border-color: rgba(241, 210, 162, 0.52);
+  box-shadow:
+    inset 0 0 70px rgba(255, 255, 255, 0.22),
+    0 0 80px rgba(241, 210, 162, 0.22);
+}
+
+.planova-cinematic .hero-orbit-ring-c {
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.planova-cinematic .hero-orbit-core {
+  background:
+    radial-gradient(circle at 32% 24%, rgba(255, 255, 255, 0.82), transparent 18%),
+    radial-gradient(circle at 65% 70%, rgba(202, 163, 109, 0.48), transparent 35%),
+    linear-gradient(145deg, rgba(53, 39, 27, 0.96), rgba(8, 7, 6, 0.9));
+  box-shadow:
+    inset 0 0 34px rgba(255, 255, 255, 0.18),
+    0 0 70px rgba(241, 210, 162, 0.35);
+}
+
+.planova-cinematic .hero-orbit-glint,
+.planova-cinematic .orbit-node {
+  background: var(--theme-gold-bright);
+  box-shadow: 0 0 42px rgba(241, 210, 162, 0.58);
+}
+
+.planova-cinematic .orbit {
+  color: rgba(241, 210, 162, 0.26);
+}
+
+.planova-cinematic .orbit-node-b {
+  background: #b98755;
+}
+
+.planova-cinematic section[class*="bg-[#f8f3eb]"],
+.planova-cinematic section[class*="bg-white"],
+.planova-cinematic main[class*="bg-[#f8f3eb]"],
+.planova-cinematic main[class*="bg-white"] {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(202, 163, 109, 0.12), transparent 26rem),
+    linear-gradient(180deg, var(--theme-cream) 0%, #f7f3ec 100%) !important;
+  color: var(--theme-ink) !important;
+}
+
+.planova-cinematic main[class*="bg-[#f8f3eb]"] h1,
+.planova-cinematic main[class*="bg-[#f8f3eb]"] h2,
+.planova-cinematic main[class*="bg-[#f8f3eb]"] h3,
+.planova-cinematic section[class*="bg-white"] h1,
+.planova-cinematic section[class*="bg-white"] h2,
+.planova-cinematic section[class*="bg-white"] h3 {
+  color: var(--theme-ink) !important;
+}
+
+.planova-cinematic main[class*="bg-[#f8f3eb]"] p,
+.planova-cinematic main[class*="bg-[#f8f3eb]"] label,
+.planova-cinematic section[class*="bg-white"] p {
+  color: rgba(18, 15, 11, 0.72) !important;
+}
+
+.planova-cinematic section[class*="bg-black"] {
+  background:
+    radial-gradient(circle at 68% 18%, rgba(241, 210, 162, 0.18), transparent 34rem),
+    radial-gradient(circle at 10% 80%, rgba(255, 255, 255, 0.05), transparent 24rem),
+    #080706 !important;
+}
+
+.planova-cinematic .client-logo-marquee,
+.planova-cinematic .work-card-media,
+.planova-cinematic .case-carousel-media {
+  background: rgba(18, 15, 11, 0.04);
+}
+
+.planova-cinematic .client-logo-link {
+  color: rgba(18, 15, 11, 0.84);
+}
+
+.planova-cinematic .client-logo-image {
+  filter: saturate(0.88) sepia(0.08) contrast(1.02);
+}
+
+.planova-cinematic article[class*="bg-[#fbf7f0]"],
+.planova-cinematic article[class*="bg-white"] {
+  background: rgba(248, 244, 236, 0.74) !important;
+  border-color: rgba(18, 15, 11, 0.15) !important;
+  box-shadow: 0 22px 60px rgba(18, 15, 11, 0.08);
+}
+
+.planova-cinematic .proof-stats-section {
+  background:
+    radial-gradient(circle at 82% 0%, rgba(202, 163, 109, 0.16), transparent 30rem),
+    var(--theme-cream) !important;
+  color: var(--theme-ink);
+}
+
+.planova-cinematic .proof-orbit {
+  opacity: 0.12;
+}
+
+.planova-cinematic .proof-orbit-line {
+  border-color: var(--theme-gold);
+}
+
+.planova-cinematic section[class*="min-h-[100svh]"] {
+  background:
+    radial-gradient(circle at 70% 42%, rgba(241, 210, 162, 0.24), transparent 25rem),
+    radial-gradient(circle at 42% 45%, rgba(255, 255, 255, 0.09), transparent 19rem),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.035), transparent 38%),
+    #090806 !important;
+  color: #f7f2ea !important;
+}
+
+.planova-cinematic section[class*="min-h-[100svh]"] h1,
+.planova-cinematic section[class*="min-h-[100svh]"] h1 span,
+.planova-cinematic section[class*="min-h-[100svh]"] p,
+.planova-cinematic section[class*="min-h-[100svh]"] a {
+  color: #f7f2ea !important;
+}
+
+.planova-cinematic section[class*="min-h-[100svh]"] p:not(:has(a)) {
+  color: rgba(247, 242, 234, 0.72) !important;
+}
+
+.planova-cinematic section[class*="min-h-[100svh]"] [class*="text-[#343434]"],
+.planova-cinematic section[class*="min-h-[100svh]"] [class*="text-[#686868]"],
+.planova-cinematic section[class*="min-h-[100svh]"] [class*="text-[#2f2119]"] {
+  color: rgba(247, 242, 234, 0.72) !important;
+}
+
+.planova-cinematic section[class*="min-h-[100svh]"] a[class*="bg"] {
+  background: rgba(247, 242, 234, 0.92) !important;
+  color: var(--theme-ink) !important;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
+}
+
 a,
 button {
   -webkit-tap-highlight-color: transparent;
@@ -345,21 +531,21 @@ button {
 
 /* Work case cards */
 .work-masonry-grid {
-  column-count: 1;
-  column-gap: 1.25rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .work-masonry-grid > .group {
-  display: inline-block;
   width: 100%;
-  margin: 0 0 1.25rem;
-  break-inside: avoid;
+  min-width: 0;
 }
 
 .work-card-media {
   display: block;
   width: 100%;
-  height: clamp(18rem, 31vw, 32rem);
+  aspect-ratio: 4 / 3;
+  height: auto;
   overflow: hidden;
   background: rgba(47, 33, 25, 0.06);
 }
@@ -825,7 +1011,7 @@ button {
 
 @media (max-width: 767px) {
   .work-card-media {
-    height: clamp(18rem, 78vw, 24rem);
+    height: auto;
   }
 
   .case-study-meta {
@@ -935,30 +1121,18 @@ button {
     transform: scale(1.012);
   }
 
-  .client-logo-marquee {
-    overflow: visible;
-  }
-
   .client-logo-track {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.45rem 2.25rem;
-    animation: none;
-  }
-
-  .client-logo-duplicates {
-    display: none;
+    animation-duration: 28s;
   }
 
   .client-logo-sequence {
-    display: contents;
+    gap: 2.75rem;
+    padding-right: 2.75rem;
   }
 
   .client-logo-link {
-    width: min(100%, 8.1rem);
-    height: 3.25rem;
-    justify-self: center;
+    width: 8.4rem;
+    height: 3.15rem;
   }
 
   .client-logo-image {
@@ -969,12 +1143,6 @@ button {
 
 @media (min-width: 768px) {
   .work-masonry-grid {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 390px) {
-  .client-logo-track {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
