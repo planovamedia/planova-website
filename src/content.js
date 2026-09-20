@@ -67,6 +67,13 @@ export const clientLogos = [
     scale: 1.12,
   },
   {
+    name: "CJ Dropshipping",
+    src: "/client-logos/normalized/cjdropshipping.png",
+    alt: "CJ Dropshipping",
+    href: null,
+    scale: 1.28,
+  },
+  {
     name: "OQQ",
     src: "/client-logos/normalized/oqq.png",
     alt: "OQQ",
