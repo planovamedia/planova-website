@@ -967,6 +967,7 @@ function CapabilityAccordion({ className = "", theme = "dark" }) {
 
 function CapabilitiesPage() {
   const { fade } = useMotionSettings();
+  const [activeCapability, setActiveCapability] = useState("Media Strategy & Buying");
 
   return (
     <main className="bg-[#f8f3eb] px-4 pb-16 pt-28 text-black sm:px-7 md:pb-24 md:pt-36 lg:px-10">
@@ -989,15 +990,54 @@ function CapabilitiesPage() {
 
       <div className="mx-auto mt-14 max-w-[1680px] md:mt-20">
         <div className="grid gap-3 md:grid-cols-2 md:gap-5 xl:grid-cols-3">
-          {capabilities.map((item) => (
-            <article key={item.title} className="min-h-0 border border-[#2f2119]/14 bg-white/58 px-5 py-6 md:min-h-[250px] md:p-6 xl:px-[26px] xl:pb-[26px] xl:pt-7">
-              <p className="mb-7 text-[13px] font-semibold leading-none text-[#7f54b8] md:mb-10">{item.number}</p>
-              <h2 className="mb-[18px] max-w-[95%] text-[28px] font-semibold uppercase leading-[1] tracking-[-0.035em] text-[#1d1511] md:text-[clamp(27px,2.1vw,34px)]">
-                {item.title}
-              </h2>
-              <p className="max-w-[40ch] text-[15px] font-normal leading-[1.4] tracking-normal text-[#2f2119]/80">{item.detail}</p>
-            </article>
-          ))}
+          {capabilities.map((item) => {
+            const isActive = activeCapability === item.title;
+            return (
+              <article
+                key={item.title}
+                className={`min-h-0 border px-5 py-6 transition duration-300 md:min-h-[310px] md:p-6 xl:px-[26px] xl:pb-[26px] xl:pt-7 ${
+                  isActive ? "border-[#1d1511]/55 bg-[#1d1511] text-white shadow-[0_26px_80px_rgba(29,21,17,0.16)]" : "border-[#2f2119]/14 bg-white/58 text-[#1d1511]"
+                }`}
+              >
+                <button
+                  type="button"
+                  className="flex h-full w-full flex-col text-left"
+                  onClick={() => setActiveCapability(isActive ? "" : item.title)}
+                  aria-expanded={isActive}
+                >
+                  <span className={`mb-7 text-[13px] font-semibold leading-none md:mb-10 ${isActive ? "text-[#d6b26f]" : "text-[#7f54b8]"}`}>{item.number}</span>
+                  <span className="mb-[18px] flex items-start justify-between gap-5">
+                    <span className="max-w-[95%] text-[28px] font-semibold uppercase leading-[1] tracking-[-0.035em] md:text-[clamp(27px,2.1vw,34px)]">
+                      {item.title}
+                    </span>
+                    <ArrowUpRight className={`mt-1 h-5 w-5 shrink-0 transition ${isActive ? "rotate-45 text-[#d6b26f]" : "text-[#5E0ED7]"}`} />
+                  </span>
+                  <span className={`block max-w-[44ch] text-[15px] font-normal leading-[1.42] tracking-normal ${isActive ? "text-white/76" : "text-[#2f2119]/80"}`}>
+                    {item.detail}
+                  </span>
+                  <AnimatePresence initial={false}>
+                    {isActive && item.items?.length ? (
+                      <motion.span
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.24, ease }}
+                        className="mt-7 block overflow-hidden"
+                      >
+                        <span className="grid gap-2 sm:grid-cols-2">
+                          {item.items.map((service) => (
+                            <span key={service} className="border border-white/18 bg-white/8 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/82">
+                              {service}
+                            </span>
+                          ))}
+                        </span>
+                      </motion.span>
+                    ) : null}
+                  </AnimatePresence>
+                </button>
+              </article>
+            );
+          })}
         </div>
         <section className="mt-16">
           <SectionLabel>Process</SectionLabel>
