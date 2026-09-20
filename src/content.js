@@ -312,7 +312,7 @@ export const projectPlaceholders = [
     campaignName: "To Every Woman",
     descriptor: "A WOMEN’S HISTORY MONTH ACTIVATION",
     status: "Published case study",
-    city: "Fontana, CA",
+    city: "Los Angeles, CA",
     year: "2026",
     category: "Experiential Activation",
     summary:
@@ -498,7 +498,7 @@ export const projectPlaceholders = [
     campaignName: "Campus Check",
     descriptor: "A BACK-TO-SCHOOL CREATOR CAMPAIGN",
     status: "Published case study",
-    city: "Fontana, CA",
+    city: "Los Angeles, CA",
     year: "2026",
     category: "Creator Management / Video Production",
     services: ["Creator Management", "Video Production"],
@@ -650,7 +650,7 @@ export const projectPlaceholders = [
     campaignName: "AI Tutor Street Quiz",
     descriptor: "A CREATOR-LED APP GROWTH CAMPAIGN",
     status: "Published case study",
-    city: "Fontana, CA",
+    city: "Los Angeles, CA",
     year: "2026",
     category: "Creator Management / Video Production",
     services: ["Creator Management", "Video Production"],
@@ -717,7 +717,7 @@ export const projectPlaceholders = [
     campaignName: "ARKPRO Co-Creation",
     descriptor: "A COMMUNITY-LED PRODUCT MARKETING CAMPAIGN",
     status: "Published case study",
-    city: "Fontana, CA",
+    city: "Los Angeles, CA",
     year: "2026",
     category: "Event Production / Creator Management",
     services: ["Event Production", "Creator Management"],
@@ -725,7 +725,7 @@ export const projectPlaceholders = [
       "Planova turned Olight ArkPro product marketing into a community-powered co-creation campaign across off-road culture, creator content and user insight.",
     overviewLabel: "Project Overview",
     context:
-      "Planova built the Olight ArkPro Co-Creation Program as an integrated product marketing campaign rooted in the communities most likely to use, test and talk about the product.\n\nWe connected Olight with the Fontana off-road scene, turning a night car meet into a hands-on brand experience where ArkPro could be discovered in its natural use case: vehicles, utility, visibility and adventure. Online, influencer content and a user idea-submission campaign extended the moment beyond the event, gathering 100+ consumer ideas while building a sharper loop between product storytelling, community participation and future innovation.",
+      "Planova built the Olight ArkPro Co-Creation Program as an integrated product marketing campaign rooted in the communities most likely to use, test and talk about the product.\n\nWe connected Olight with the Los Angeles off-road scene, turning a night car meet into a hands-on brand experience where ArkPro could be discovered in its natural use case: vehicles, utility, visibility and adventure. Online, influencer content and a user idea-submission campaign extended the moment beyond the event, gathering 100+ consumer ideas while building a sharper loop between product storytelling, community participation and future innovation.",
     metrics: [],
     results: [
       { value: "100+", label: "Consumer Ideas Collected" },
@@ -745,7 +745,7 @@ export const projectPlaceholders = [
       },
       {
         label: "Experience",
-        body: "We produced an Olight x Fontana off-road community event that placed the product directly into car culture, night utility and hands-on discovery moments.",
+        body: "We produced an Olight x Los Angeles off-road community event that placed the product directly into car culture, night utility and hands-on discovery moments.",
       },
       {
         label: "Amplification",
