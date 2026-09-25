@@ -26,6 +26,23 @@ const heroCapabilities = [
   "Media Strategy & Buying",
 ];
 const heroCapabilityLine = heroCapabilities.join(" — ");
+const heroExperienceImages = [
+  {
+    src: "/projects/ulike/ulike-dare-to-glow-group.jpg",
+    alt: "Creators and guests gathered at a Planova-produced ULIKE launch experience.",
+    className: "hero-film-panel-a",
+  },
+  {
+    src: "/projects/vevor/vevor-times-square-crowd-pop-up.jpg",
+    alt: "Crowds moving through a Planova-produced VEVOR Times Square pop-up.",
+    className: "hero-film-panel-b",
+  },
+  {
+    src: "/projects/ritfit/ritfit-westfield-aerial-activation.jpg",
+    alt: "RITFIT fitness brand activation produced by Planova at Westfield.",
+    className: "hero-film-panel-c",
+  },
+];
 
 function getPath() {
   return window.location.pathname.replace(/\/+$/, "") || "/";
@@ -226,23 +243,17 @@ function ResponsiveVideo({ className = "" }) {
 }
 
 function HeroFilmstrip() {
-  const reduceMotion = useReducedMotion();
-
   return (
     <div className="hero-filmstrip" aria-label="Planova campaign media montage">
-      {heroFilmstrip.map((panel, index) => (
-        <div key={panel.label} className={`hero-film-panel ${panel.className}`}>
-          <video
+      {heroExperienceImages.map((panel) => (
+        <div key={panel.src} className={`hero-film-panel ${panel.className}`}>
+          <img
+            src={panel.src}
+            alt={panel.alt}
             className="h-full w-full object-cover"
-            autoPlay={!reduceMotion}
-            loop
-            muted
-            playsInline
-            preload={index === 0 ? "metadata" : "none"}
-            aria-label={panel.label}
-          >
-            <source src={videoUrl} type="video/mp4" />
-          </video>
+            loading="eager"
+            decoding="async"
+          />
         </div>
       ))}
     </div>
@@ -400,72 +411,57 @@ function Homepage({ navigate }) {
 
   return (
     <>
-      <section className="relative min-h-[100svh] overflow-hidden bg-[#f8f3eb] pt-20 text-[#111111] md:pt-24">
-        <div className="mx-auto flex min-h-[calc(100svh-5rem)] max-w-[1680px] flex-col px-4 pb-6 pt-8 sm:px-7 md:px-10 md:pb-8 md:pt-8">
-          <div className="grid flex-1 gap-8 md:grid-cols-[0.45fr_0.55fr] md:items-center md:gap-10 xl:gap-16">
-            <div className="order-2 flex min-h-[34svh] items-center md:order-1 md:min-h-0" aria-hidden="true">
-              <div className="hero-visual">
-                <div className="hero-orbit-stage">
-                  <div className="hero-orbit-object">
-                    <span className="hero-orbit-ring hero-orbit-ring-a" />
-                    <span className="hero-orbit-ring hero-orbit-ring-b" />
-                    <span className="hero-orbit-ring hero-orbit-ring-c" />
-                    <span className="hero-orbit-core" />
-                    <span className="hero-orbit-glint" />
-                  </div>
-                </div>
+      <section className="home-agency-hero">
+        <picture className="home-agency-hero-media" aria-hidden="true">
+          <source media="(max-width: 767px)" srcSet="/projects/ulike/ulike-dare-to-glow-group.jpg" />
+          <img src="/projects/vevor/vevor-times-square-crowd-pop-up.jpg" alt="" />
+        </picture>
+        <div className="home-agency-hero-scrim" aria-hidden="true" />
+
+        <div className="home-agency-hero-inner">
+          <motion.div
+            className="home-agency-hero-topline"
+            initial={{ opacity: reduceMotion ? 1 : 0, y: reduceMotion ? 0 : 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: reduceMotion ? 0 : 0.55, ease }}
+          >
+            <span>Planova Experience Agency</span>
+            <span>Los Angeles / Nationwide</span>
+            <span>Events · Creators · Content · Media</span>
+          </motion.div>
+
+          <motion.div
+            className="home-agency-hero-copy"
+            initial={{ opacity: reduceMotion ? 1 : 0, y: reduceMotion ? 0 : 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: reduceMotion ? 0 : 0.08, duration: reduceMotion ? 0 : 0.7, ease }}
+          >
+            <h1>Brand experiences built to be seen, shared, and remembered.</h1>
+            <div className="home-agency-hero-lower">
+              <p>
+                Planova produces live brand moments, creator campaigns, PR launches, content and media activations for brands growing across the U.S.
+              </p>
+              <div className="home-agency-hero-actions">
+                <Link href="/work" navigate={navigate}>
+                  View Work <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+                <Link href="/capabilities" navigate={navigate}>
+                  Services <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
               </div>
             </div>
-
-          <motion.div
-            className="order-1 w-full justify-self-end md:order-2 md:max-w-[920px] xl:max-w-[1040px]"
-            initial={{ opacity: reduceMotion ? 1 : 0, y: reduceMotion ? 0 : 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: reduceMotion ? 0 : 0.7, ease }}
-          >
-            <div className="grid gap-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#343434] sm:text-sm">
-              <span>Integrated Marketing Agency</span>
-              <span className="text-[#686868]">Los Angeles, CA</span>
-            </div>
-            <h1 className="mt-5 text-[clamp(3.4rem,14.4vw,8rem)] font-semibold uppercase leading-[0.86] tracking-[-0.055em] text-[#111111] md:mt-6 md:text-[clamp(5rem,7vw,8.9rem)]">
-              <span className="block max-w-[9ch] md:hidden">
-                IDEAS IN ORBIT.
-                <span className="block">IMPACT IN MOTION.</span>
-              </span>
-              <span className="hidden max-w-[12ch] md:block">
-                IDEAS IN ORBIT.
-                <span className="block">IMPACT IN MOTION.</span>
-              </span>
-            </h1>
-            <p className="mt-5 max-w-[620px] text-lg font-semibold leading-snug text-[#343434] sm:text-xl md:mt-6">
-              We connect strategy, experiences, creators, content and media to build campaigns people notice, join and share.
-            </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-7">
-              <Link
-                href="/work"
-                navigate={navigate}
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#5E0ED7] px-6 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#111111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E0ED7]"
-              >
-                Selected Work
-              </Link>
-            </div>
           </motion.div>
-          </div>
 
           <motion.div
-            className="mt-8 border-y border-[#2f2119]/18 py-4 md:mt-4 md:py-5"
+            className="home-agency-service-rail"
             initial={{ opacity: reduceMotion ? 1 : 0, y: reduceMotion ? 0 : 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: reduceMotion ? 0 : 0.12, duration: reduceMotion ? 0 : 0.6, ease }}
+            transition={{ delay: reduceMotion ? 0 : 0.18, duration: reduceMotion ? 0 : 0.6, ease }}
           >
-            <p className="hidden text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#2f2119]/72 md:block">
-              {heroCapabilityLine}
-            </p>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#2f2119]/74 min-[430px]:grid-cols-3 md:hidden">
-              {heroCapabilities.map((capability) => (
-                <span key={capability}>{capability}</span>
-              ))}
-            </div>
+            <span>We Deliver ///</span>
+            {["Pop-ups", "Product Launches", "Influencer Events", "OOH", "PR Moments", "Content Production"].map((item) => (
+              <span key={item}>{item}</span>
+            ))}
           </motion.div>
         </div>
       </section>

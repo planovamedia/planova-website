@@ -202,6 +202,176 @@ body {
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
 }
 
+.home-agency-hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #090806;
+  color: #f8f3eb;
+}
+
+.home-agency-hero-media,
+.home-agency-hero-media img,
+.home-agency-hero-scrim {
+  position: absolute;
+  inset: 0;
+}
+
+.home-agency-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.92) contrast(1.08);
+  transform: scale(1.012);
+}
+
+.home-agency-hero-scrim {
+  background:
+    linear-gradient(90deg, rgba(8, 7, 6, 0.88) 0%, rgba(8, 7, 6, 0.58) 42%, rgba(8, 7, 6, 0.18) 100%),
+    linear-gradient(0deg, rgba(8, 7, 6, 0.82) 0%, rgba(8, 7, 6, 0.24) 42%, rgba(8, 7, 6, 0.55) 100%);
+}
+
+.home-agency-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100svh;
+  max-width: 1680px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7rem 1rem 1rem;
+}
+
+.home-agency-hero-topline,
+.home-agency-service-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1rem;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: rgba(248, 243, 235, 0.74);
+}
+
+.home-agency-hero-topline span:not(:last-child)::after,
+.home-agency-service-rail span:not(:last-child)::after {
+  content: "/";
+  margin-left: 1rem;
+  color: rgba(248, 243, 235, 0.36);
+}
+
+.home-agency-hero-copy {
+  width: min(100%, 1160px);
+  padding: 16svh 0 3rem;
+}
+
+.home-agency-hero-copy h1 {
+  max-width: 10.4ch;
+  font-size: clamp(4.2rem, 11.5vw, 12rem);
+  font-weight: 650;
+  letter-spacing: -0.07em;
+  line-height: 0.78;
+  text-transform: uppercase;
+  color: #f8f3eb;
+}
+
+.home-agency-hero-lower {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 940px;
+  margin-top: 1.8rem;
+}
+
+.home-agency-hero-lower p {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.7vw, 1.55rem);
+  font-weight: 650;
+  line-height: 1.18;
+  color: rgba(248, 243, 235, 0.78);
+}
+
+.home-agency-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.home-agency-hero-actions a {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(248, 243, 235, 0.32);
+  border-radius: 999px;
+  padding: 0 1.15rem;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f8f3eb;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.home-agency-hero-actions a:first-child {
+  background: rgba(248, 243, 235, 0.94);
+  color: #120f0b;
+}
+
+.home-agency-hero-actions a:hover,
+.home-agency-hero-actions a:focus-visible {
+  border-color: #f8f3eb;
+  background: #f8f3eb;
+  color: #120f0b;
+}
+
+.home-agency-service-rail {
+  border-top: 1px solid rgba(248, 243, 235, 0.2);
+  padding-top: 1rem;
+  color: rgba(248, 243, 235, 0.82);
+}
+
+@media (max-width: 767px) {
+  .home-agency-hero-media img {
+    object-position: 58% center;
+  }
+
+  .home-agency-hero-scrim {
+    background:
+      linear-gradient(0deg, rgba(8, 7, 6, 0.9) 0%, rgba(8, 7, 6, 0.42) 48%, rgba(8, 7, 6, 0.62) 100%),
+      linear-gradient(90deg, rgba(8, 7, 6, 0.76), rgba(8, 7, 6, 0.12));
+  }
+
+  .home-agency-hero-inner {
+    padding-top: 6rem;
+  }
+
+  .home-agency-hero-copy {
+    padding: 20svh 0 2rem;
+  }
+
+  .home-agency-hero-copy h1 {
+    max-width: 8.5ch;
+    font-size: clamp(3.6rem, 17vw, 5.8rem);
+    line-height: 0.82;
+  }
+
+  .home-agency-service-rail {
+    gap: 0.55rem 0.75rem;
+  }
+
+  .home-agency-service-rail span:not(:last-child)::after,
+  .home-agency-hero-topline span:not(:last-child)::after {
+    margin-left: 0.75rem;
+  }
+}
+
 a,
 button {
   -webkit-tap-highlight-color: transparent;
@@ -268,26 +438,26 @@ button {
 .hero-visual {
   position: relative;
   width: 100%;
-  min-height: min(42svh, 26rem);
+  min-height: min(50svh, 32rem);
   overflow: hidden;
 }
 
 .hero-filmstrip {
   position: absolute;
-  inset: 4% 0 0 0;
+  inset: 2% 0 0 0;
   display: grid;
-  grid-template-columns: 42% 34% 27%;
+  grid-template-columns: 48% 34% 28%;
   align-items: center;
-  gap: 0.55rem;
-  transform: translateX(-6%);
+  gap: 0.7rem;
+  transform: translateX(-3%);
 }
 
 .hero-film-panel {
   position: relative;
   overflow: hidden;
-  background: #d9cfc3;
-  filter: saturate(0.72) contrast(0.92) sepia(0.08);
-  box-shadow: 0 20px 50px rgba(47, 33, 25, 0.14);
+  background: #14100d;
+  filter: saturate(0.92) contrast(1.04) sepia(0.08);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
   transition: transform 300ms ease, filter 300ms ease;
 }
 
@@ -295,22 +465,24 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(248, 243, 235, 0.08), rgba(47, 33, 25, 0.18));
+  background:
+    linear-gradient(180deg, rgba(8, 7, 6, 0.04), rgba(8, 7, 6, 0.28)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent 42%);
   pointer-events: none;
 }
 
 .hero-film-panel-a {
-  height: min(34svh, 24rem);
+  height: min(46svh, 34rem);
 }
 
 .hero-film-panel-b {
-  height: min(27svh, 19rem);
-  margin-top: 10svh;
+  height: min(34svh, 25rem);
+  margin-top: 13svh;
 }
 
 .hero-film-panel-c {
-  height: min(30svh, 21rem);
-  margin-top: 3svh;
+  height: min(38svh, 28rem);
+  margin-top: 4svh;
 }
 
 .hero-visual:hover .hero-film-panel-a {
@@ -412,29 +584,29 @@ button {
   }
 
   .hero-visual {
-    min-height: min(66vh, 44rem);
+    min-height: min(70vh, 48rem);
     overflow: visible;
   }
 
   .hero-filmstrip {
-    inset: 10% 2% 8% 0;
-    grid-template-columns: 38% 31% 23%;
-    gap: 0.75rem;
+    inset: 7% 2% 7% 0;
+    grid-template-columns: 48% 34% 28%;
+    gap: 0.9rem;
     transform: none;
   }
 
   .hero-film-panel-a {
-    height: min(54vh, 36rem);
+    height: min(63vh, 44rem);
   }
 
   .hero-film-panel-b {
-    height: min(42vh, 28rem);
-    margin-top: 16vh;
+    height: min(43vh, 31rem);
+    margin-top: 18vh;
   }
 
   .hero-film-panel-c {
-    height: min(46vh, 31rem);
-    margin-top: 6vh;
+    height: min(50vh, 35rem);
+    margin-top: 7vh;
   }
 }
 
