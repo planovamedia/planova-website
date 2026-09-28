@@ -103,10 +103,13 @@ function Logo({ navigate }) {
     <Link
       href="/"
       navigate={navigate}
-      className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E0ED7]"
-      aria-label="Planova Creative home"
+      className="inline-flex items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E0ED7]"
+      aria-label="Planova Media home"
     >
       <img src="/planova-mark.png" alt="Planova" className="h-9 w-auto sm:h-11" />
+      <span className="text-[13px] font-semibold uppercase leading-none tracking-[0.18em] sm:text-sm">
+        Planova Media
+      </span>
     </Link>
   );
 }
@@ -425,7 +428,7 @@ function Homepage({ navigate }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: reduceMotion ? 0 : 0.55, ease }}
           >
-            <span>Planova Experience Agency</span>
+            <span>Brand Experience Agency</span>
             <span>Los Angeles / Nationwide</span>
             <span>Events · Creators · Content · Media</span>
           </motion.div>
