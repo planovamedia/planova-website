@@ -106,7 +106,7 @@ function Logo({ navigate }) {
       className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E0ED7]"
       aria-label="Planova Creative home"
     >
-      <img src="/logo-transparent.png" alt="Planova" className="h-auto w-[118px] sm:w-[138px]" />
+      <img src="/planova-mark.png" alt="Planova" className="h-9 w-auto sm:h-11" />
     </Link>
   );
 }
