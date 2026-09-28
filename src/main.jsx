@@ -429,7 +429,6 @@ function Homepage({ navigate }) {
             transition={{ duration: reduceMotion ? 0 : 0.55, ease }}
           >
             <span>Brand Experience Agency</span>
-            <span>Los Angeles / Nationwide</span>
             <span>Events · Creators · Content · Media</span>
           </motion.div>
 
