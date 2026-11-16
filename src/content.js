@@ -499,6 +499,93 @@ export const projectPlaceholders = [
     tone: "from-[#111111] via-[#ff3d9a] to-[#52d2dd]",
   },
   {
+    slug: "heybike-spurs-partnership",
+    name: "HEYBIKE x San Antonio Spurs",
+    client: "HEYBIKE",
+    campaignName: "Game-Day Activations",
+    descriptor: "A SEASON OF IN-ARENA BRAND ACTIVATIONS",
+    status: "Published case study",
+    city: "San Antonio, TX",
+    year: "2026",
+    category: "Event Production / Brand Activation",
+    services: ["Event Production", "In-Arena Activation", "Fan Engagement"],
+    summary:
+      "Season-long game-day activations bringing Heybike into the San Antonio Spurs fan experience.",
+    overviewLabel: "Project Overview",
+    context:
+      "Across the 2026 season, Planova produced Heybike activations at San Antonio Spurs games in San Antonio, Texas.\n\nBuilt for the energy of game day, the in-arena experience brought Heybike’s e-bikes and fan-facing moments into the live event environment. Planova supported the production and on-site execution of activations throughout the season, creating a consistent brand presence for fans to discover between tip-off and the final buzzer.",
+    metrics: [],
+    results: [],
+    sections: [
+      {
+        label: "The Brief",
+        body: "Create a welcoming, memorable game-day presence for Heybike across the San Antonio Spurs season.",
+      },
+      {
+        label: "Event Production",
+        body: "Planova handled event production and on-site activation support, bringing the branded e-bike display and fan touchpoints to life in the arena.",
+      },
+      {
+        label: "Game-Day Experience",
+        body: "Product discovery, fan interaction and a Heybike giveaway connected the brand to the excitement of live Spurs basketball throughout the season.",
+      },
+    ],
+    cover: {
+      src: "/projects/heybike-spurs/_DSC7867.jpg",
+      mobileSrc: "/projects/heybike-spurs/_DSC7867.jpg",
+      alt: "Young Spurs fan trying a Heybike at the in-arena activation.",
+      focalPoint: "center",
+    },
+    gallery: [
+      {
+        src: "/projects/heybike-spurs/_DSC7867.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7867.jpg",
+        alt: "Young Spurs fan trying a Heybike at the in-arena activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7830.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7830.jpg",
+        alt: "Fan viewing Heybike’s social content at the arena activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7877.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7877.jpg",
+        alt: "Fan getting a hands-on look at a Heybike e-bike during the activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7366.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7366.jpg",
+        alt: "Heybike fan giveaway signage at the Spurs game-day activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7361.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7361.jpg",
+        alt: "Spurs fan holding a Heybike giveaway prize.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7309.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7309.jpg",
+        alt: "Fan wearing a Spurs cap and enjoying the Heybike activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7455.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7455.jpg",
+        alt: "Heybike and Spurs branded giveaway items prepared for fans.",
+        focalPoint: "center",
+      },
+    ],
+    detail:
+      "Season-long in-arena activations for Heybike at San Antonio Spurs games, produced by Planova in 2026.",
+    featured: true,
+    tone: "from-[#111111] via-[#373737] to-[#e5e5e5]",
+  },
+  {
     slug: "laifen-campus-check",
     name: "LAIFEN Campus Check",
     client: "LAIFEN",
@@ -580,7 +667,7 @@ export const projectPlaceholders = [
     ],
     detail:
       "A back-to-school creator campaign built around campus interviews, product discovery and social-first video.",
-    featured: true,
+    featured: false,
     tone: "from-[#f8f2e9] via-[#f3b33c] to-[#161616]",
   },
   {
