@@ -543,16 +543,16 @@ export const projectPlaceholders = [
       },
     ],
     cover: {
-      src: "/projects/heybike-spurs/_DSC7867.jpg",
-      mobileSrc: "/projects/heybike-spurs/_DSC7867.jpg",
-      alt: "Young Spurs fan trying a Heybike at the in-arena activation.",
+      src: "/projects/heybike-spurs/_DSC7822.jpg",
+      mobileSrc: "/projects/heybike-spurs/_DSC7822.jpg",
+      alt: "Heybike fan holding a model brochure at the Spurs activation.",
       focalPoint: "center",
     },
     gallery: [
       {
-        src: "/projects/heybike-spurs/_DSC7867.jpg",
-        mobileSrc: "/projects/heybike-spurs/_DSC7867.jpg",
-        alt: "Young Spurs fan trying a Heybike at the in-arena activation.",
+        src: "/projects/heybike-spurs/_DSC7822.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7822.jpg",
+        alt: "Heybike fan holding a model brochure at the Spurs activation.",
         focalPoint: "center",
       },
       {
