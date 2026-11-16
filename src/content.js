@@ -522,8 +522,11 @@ export const projectPlaceholders = [
     overviewLabel: "Project Overview",
     context:
       "Across the 2026 season, Planova produced Heybike activations at San Antonio Spurs games in San Antonio, Texas.\n\nBuilt for the energy of game day, the in-arena experience brought Heybike’s e-bikes and fan-facing moments into the live event environment. Planova supported the production and on-site execution of activations throughout the season, creating a consistent brand presence for fans to discover between tip-off and the final buzzer.",
-    metrics: ["20,000+ fans in attendance on game days", "36 in-season games"],
-    results: [],
+    metrics: [],
+    results: [
+      { value: "20,000+", label: "Game-Day Attendance" },
+      { value: "36", label: "In-Season Games" },
+    ],
     sections: [
       {
         label: "The Brief",
