@@ -526,6 +526,7 @@ export const projectPlaceholders = [
     results: [
       { value: "20,000+", label: "Game-Day Attendance" },
       { value: "36", label: "In-Season Games" },
+      { value: "3", label: "Fan Engagement Touchpoints" },
     ],
     sections: [
       {
