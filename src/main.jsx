@@ -293,6 +293,7 @@ function ClientLogoItem({ client, navigate, duplicate = false }) {
     "--logo-scale": client.scale || 1,
     "--logo-x": `${client.offsetX || 0}px`,
     "--logo-y": `${client.offsetY || 0}px`,
+    filter: client.filter || undefined,
   };
   const content = client.src ? (
     <img
