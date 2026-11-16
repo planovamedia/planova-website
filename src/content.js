@@ -550,12 +550,6 @@ export const projectPlaceholders = [
     },
     gallery: [
       {
-        src: "/projects/heybike-spurs/_DSC7822.jpg",
-        mobileSrc: "/projects/heybike-spurs/_DSC7822.jpg",
-        alt: "Heybike fan holding a model brochure at the Spurs activation.",
-        focalPoint: "center",
-      },
-      {
         src: "/projects/heybike-spurs/_DSC7830.jpg",
         mobileSrc: "/projects/heybike-spurs/_DSC7830.jpg",
         alt: "Fan viewing Heybike’s social content at the arena activation.",
@@ -565,6 +559,12 @@ export const projectPlaceholders = [
         src: "/projects/heybike-spurs/_DSC7877.jpg",
         mobileSrc: "/projects/heybike-spurs/_DSC7877.jpg",
         alt: "Fan getting a hands-on look at a Heybike e-bike during the activation.",
+        focalPoint: "center",
+      },
+      {
+        src: "/projects/heybike-spurs/_DSC7822.jpg",
+        mobileSrc: "/projects/heybike-spurs/_DSC7822.jpg",
+        alt: "Heybike fan holding a model brochure at the Spurs activation.",
         focalPoint: "center",
       },
       {
