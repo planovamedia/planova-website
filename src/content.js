@@ -594,7 +594,7 @@ export const projectPlaceholders = [
     ],
     detail:
       "A fitness festival activation built around scale, product trial and social-first guest participation.",
-    featured: true,
+    featured: false,
     tone: "from-[#111111] via-[#ff3d9a] to-[#52d2dd]",
   },
   {
