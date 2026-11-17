@@ -422,6 +422,97 @@ export const projectPlaceholders = [
     tone: "from-[#111111] via-[#284f76] to-[#f7f1e8]",
   },
   {
+    "slug": "ritfit-faces-of-fitness-miami",
+    "name": "RITFIT x Faces Of Fitness Miami",
+    "client": "RITFIT",
+    "campaignName": "Faces Of Fitness Miami",
+    "descriptor": "A HANDS-ON FITNESS BRAND ACTIVATION",
+    "status": "Published case study",
+    "city": "Miami, FL",
+    "year": "2026",
+    "category": "Experiential Activation",
+    "services": [
+      "Experiential Activation",
+      "Event Production"
+    ],
+    "summary": "A Miami festival pop-up connecting RITFIT with fitness enthusiasts through equipment trials and interactive challenges.",
+    "overviewLabel": "Project Overview",
+    "context": "Planova brought RITFIT to Miami’s Faces of Fitness festival with a pop-up built around hands-on equipment experiences and audience interaction.\n\nProduct trials, fitness challenges and prize moments invited festivalgoers to step into the space and get moving. With on-site guidance, guests could explore the equipment, take on a challenge and connect with RITFIT through the experience of training.",
+    "metrics": [],
+    "results": [
+      { value: "10,000+", label: "Festival + Activation Participants" },
+      { value: "4", label: "Interactive Check-in Stations" },
+      { value: "200+", label: "Related Hashtag Stories In One Day" },
+    ],
+    "sections": [
+      {
+        "label": "Strategy",
+        "body": "Make product experience the starting point for brand connection, giving fitness-minded festivalgoers an approachable, engaging way to discover RITFIT."
+      },
+      {
+        "label": "Experience",
+        "body": "The pop-up combined guided equipment trials with a challenge wheel, a record-to-beat display and branded giveaways. Together, these touchpoints created multiple ways for guests to participate, from trying a machine to celebrating a completed challenge."
+      },
+      {
+        "label": "Amplification",
+        "body": "Branded installations, challenge displays and guest photo moments extended the experience beyond the workout, creating opportunities to capture and share the day."
+      }
+    ],
+    "cover": {
+      "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-festival-moment.jpg",
+      "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-festival-moment.jpg",
+      "alt": "On-stage speaker addressing the fitness festival audience.",
+      "focalPoint": "center"
+    },
+    "gallery": [
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-equipment-experience.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-equipment-experience.jpg",
+        "alt": "Festivalgoer celebrating a RITFIT leg press trial with an on-site team member.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-guided-trial.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-guided-trial.jpg",
+        "alt": "Guest trying RITFIT strength equipment with on-site guidance.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-fitness-challenge.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-fitness-challenge.jpg",
+        "alt": "Festival guest beside the RITFIT record-to-beat challenge display.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-challenge-wheel.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-challenge-wheel.jpg",
+        "alt": "Festivalgoers posing beside the RITFIT exercise challenge wheel.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-community.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-community.jpg",
+        "alt": "Participants holding RITFIT branded bags at Faces of Fitness Miami.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-giveaway.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-giveaway.jpg",
+        "alt": "Guest holding a RITFIT giveaway in front of the branded installation.",
+        "focalPoint": "center"
+      },
+      {
+        "src": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-festival-moment.jpg",
+        "mobileSrc": "/projects/ritfit-faces-of-fitness-miami/ritfit-miami-festival-moment.jpg",
+        "alt": "On-stage speaker addressing the fitness festival audience.",
+        "focalPoint": "center"
+      }
+    ],
+    "detail": "A hands-on fitness festival pop-up connecting product experience, interactive challenges and community.",
+    "featured": true,
+    "tone": "from-[#111111] via-[#45b8c6] to-[#78d7e5]"
+  },
+  {
     slug: "ritfit-faces-of-fitness",
     name: "RITFIT x Faces Of Fitness",
     client: "RITFIT",
